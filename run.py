@@ -1,3 +1,4 @@
+import discord
 from discord.ext import commands
 
 from settings import *
@@ -55,7 +56,7 @@ class temporary_channel:
 @bot.event
 async def on_voice_state_update(member, before, after):
     if after.channel is not None:
-            if after.channel.id == mother_channel_id:
+        if after.channel.id == mother_channel_id:
             if member not in channels:
                 channels.setdefault(member, temporary_channel(main_category, member))
             channels[member].checking_data()
