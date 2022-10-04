@@ -1,4 +1,4 @@
-# nex
+# NEX (discord temporary channels bot)
 that's bot which make temproary channels in chosen category on your discord channel
 the functionality, which currently exist:
 -u can choose the category where u want to create channels
